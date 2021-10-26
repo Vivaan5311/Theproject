@@ -1,3 +1,4 @@
+
  
 <html>
   <head>
@@ -7,6 +8,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
 
    <link rel="stylesheet" href="style.css">
@@ -17,7 +19,7 @@
   <div class="container">
     
     <center>
-      <h3 class="btn btn-defaultheading">IMAGE RECOGNITION</h3>
+      <h3 class="btn btn-default heading">IMAGE RECOGNITION</h3>
       <br><br>
 
       <p style="font-size: 22px;">Model is trained to identify the following objects: </p>
@@ -29,11 +31,10 @@
         <hr>
         Phone
         <hr>
-        Bottle
+        Water Bottle
         <hr>
       </b>
-     
-     
+
       <label>Webcam View - </label>
       <div id="camera"></div>
       <br><br>
@@ -44,8 +45,8 @@
       <button onclick="check();" class="btn btn-success">Identify Image</button>
       <br><br>
 
-      <p style="font-size: 22px;">Object :  <span id="result_object_name"></span></p>
-      <p style="font-size: 22px;">Accuracy :  <span id="result_object_accuracy"></span></p>
+      <p style="font-size: 22px;">Object : <span id="result_object_name"></span> </p>
+      <p style="font-size: 22px;">Accuracy : <span id="result_object_accuracy"></span> </p>
     </center>
 
   </div>
